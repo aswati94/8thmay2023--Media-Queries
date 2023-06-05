@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'swatifontface';
+    src: url("../fonts/LeagueGothic-Regular.otf") format("opentype");
+}
+
+body{
+    margin: 0px;
+}
+
+header,footer{
+    width: 100%;
+    height: 100px;
+    border: 2px dashed black;
+    font-family: 'swatifontface', Arial, Helvetica, sans-serif;
+}
+
+main{
+    min-height: 1200px;
+    border: 2px dashed yellow;
+    clear: both;
+}
+
+aside[data-leftaside="left"]{
+    width: 25%;
+    height: 100%;
+    background-color: red;
+    float: left;
+}
+ 
+section[data-sec="mainsection"]{
+    width: 50%;
+    height: 100%;
+    background-color: yellow;
+    float: left;
+}
+
+aside[data-rightaside="right"]{
+    width: 25%;
+    height: 100%;
+    background-color: violet;
+    float: left;
+}
+
+footer{
+    height: 200px;
+}
+
+@media only screen and (max-width:600px){
+     body{
+        background-color: lightcoral;
+     }
+}
+
+aside[data-rightaside="right"]{
+    width: 24.9%;
+}
+
+@media only screen and (min-width:601px){
+    body{
+       background-color: green;
+    }
+}
